@@ -1,0 +1,38 @@
+name: Optimize resource pack
+on:
+  push:
+    branches:
+      - master
+jobs:
+  packsquash:
+    name: Optimize resource pack
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # A non-shallow repository clone is required
+      - name: Run PackSquash
+        uses: ComunidadAylas/PackSquash-action@v4
+        with:
+          packsquash_version: latest
+          options: |
+            # Optimize the pack in the root repository directory.
+            # This is the default value for pack_directory when no PackSquash options are defined
+            pack_directory = '.'
+
+            # Set a custom output file path to work with the generated ZIP file
+            # without needing to download its artifact in a separate step
+            output_file_path = '/tmp/TBD-RP-S4.zip'
+      - name: Calculate SHA1
+        run: |
+          echo "PACK_SHA1=$(sha1sum /tmp/TBD-RP-S4.zip | cut --delimiter " " --fields 1)" >> "$GITHUB_ENV"
+      - name: Tag and create release
+        uses: softprops/action-gh-release@v2
+        with:
+          description: "SHA1: ${{ env.PACK_SHA1 }}"
+          tag_name: master-v${{ github.run_number }}
+          files: /tmp/TBD-RP-S4.zip
+          
