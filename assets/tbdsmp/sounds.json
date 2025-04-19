@@ -1,0 +1,9 @@
+{
+    "music_disc.lava_chicken": {
+        "sounds": [
+            {
+                "name": "tbdsmp:records/steve_lava_chicken" 
+            }
+        ]
+    }
+}
