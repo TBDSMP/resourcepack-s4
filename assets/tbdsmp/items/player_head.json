@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "tbd:item/template_skull",
+    "model": {
+      "type": "minecraft:head",
+      "kind": "player"
+    }
+  }
+}
