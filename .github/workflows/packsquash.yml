@@ -32,7 +32,7 @@ jobs:
       - name: Tag and create release
         uses: softprops/action-gh-release@v2
         with:
-          description: "SHA1: ${{ env.PACK_SHA1 }}"
+          body: "SHA1: ${{ env.PACK_SHA1 }}"
           tag_name: master-v${{ github.run_number }}
           files: /tmp/TBD-RP-S4.zip
           
