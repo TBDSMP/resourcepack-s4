@@ -72,10 +72,38 @@
 		},
 		{
 			"type":"bitmap",
+			"file":"font/rarity_transcendent.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE004"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/rarity_celestial.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE005"]
+		},
+		{
+			"type":"bitmap",
 			"file":"font/sub_rarity_shiny.png",
 			"ascent":9,
 			"height":9,
 			"chars":["\uE000"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/sub_rarity_shadow.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE001"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/sub_rarity_obfuscated.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE002"]
 		},
 		{
 			"type":"bitmap",
