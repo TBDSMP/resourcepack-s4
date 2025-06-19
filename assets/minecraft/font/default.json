@@ -148,6 +148,13 @@
 			"chars":["\uF014"]
 		},
 		{
+			"type":"bitmap",
+			"file":"font/type_memento.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uF016"]
+		},
+		{
 			"type": "bitmap",
 			"file": "font/season4_logo_plants.png",
 			"ascent": 50,
