@@ -26,6 +26,9 @@ jobs:
             # Set a custom output file path to work with the generated ZIP file
             # without needing to download its artifact in a separate step
             output_file_path = '/tmp/TBD-RP-S4.zip'
+
+            # Allow files from optifine
+            allow_mods = ['OptiFine']
       - name: Calculate SHA1
         run: |
           echo "PACK_SHA1=$(sha1sum /tmp/TBD-RP-S4.zip | cut --delimiter " " --fields 1)" >> "$GITHUB_ENV"
