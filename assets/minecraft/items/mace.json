@@ -1,0 +1,29 @@
+{
+    "model": {
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:custom_name",
+        "on_true": {
+            "type": "minecraft:select",
+            "property": "minecraft:component",
+            "component": "minecraft:custom_name",
+            "cases": [
+                {
+                    "when": "Judge Gavel",
+                    "model": {
+                        "type": "minecraft:model",
+                        "model": "tbdsmp:item/judge_gavel"
+                    }
+                }
+            ],
+            "fallback": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/mace"
+            }
+        },
+        "on_false": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/mace"
+        }
+    }
+}
