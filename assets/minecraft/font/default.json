@@ -125,6 +125,13 @@
 			"ascent": 50,
 			"height": 50,
 			"chars":["\uF015"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/state_live.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uF016"]
 		}
     ]
 }
