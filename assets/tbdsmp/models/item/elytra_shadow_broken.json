@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tbdsmp:item/elytra_shadow_broken"
+  }
+}

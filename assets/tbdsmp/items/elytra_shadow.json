@@ -1,0 +1,14 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "tbdsmp:item/elytra_shadow"
+    },
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "tbdsmp:item/elytra_shadow_broken"
+    },
+    "property": "minecraft:broken"
+  }
+}

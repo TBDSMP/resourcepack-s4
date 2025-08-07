@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "tbdsmp:elytra_shadow",
+        "use_player_texture": false
+      }
+    ]
+  }
+}
