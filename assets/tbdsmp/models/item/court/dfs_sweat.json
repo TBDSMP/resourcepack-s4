@@ -1,0 +1,9 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "tbdsmp:item/court/headial_expression",
+	"textures": {
+		"0": "tbdsmp:item/court/dfs_sweat",
+		"particle": "tbdsmp:item/court/dfs_sweat"
+	}
+}
