@@ -14,8 +14,7 @@
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/psc_document"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "DFD - Angry",
                     "model": {
