@@ -21,80 +21,70 @@
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/dfd_angry"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "DFD - Cry",
                     "model": {
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/dfd_cry"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "DFD - Sweat",
                     "model": {
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/dfd_sweat"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "DFS - Sweat",
                     "model": {
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/dfs_sweat"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "JDG - Gavel",
                     "model": {
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/jdg_gavel"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "CUL - Threaten",
                     "model": {
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/cul_threaten"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "CUL - Sweat",
                     "model": {
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/cul_sweat"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "DFA - Document",
                     "model": {
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/dfa_document"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "DFA - Sweat",
                     "model": {
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/dfa_sweat"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "JRY - Take Notes",
                     "model": {
                         "type": "minecraft:model",
                         "model": "minecraft:item/court/jry_notes"
                     }
-                }
-            ], [
+                },
                 {
                     "when": "JRY - Confident",
                     "model": {
@@ -114,3 +104,4 @@
         }
     }
 }
+
