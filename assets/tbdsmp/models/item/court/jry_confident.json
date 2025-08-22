@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "item/court/jry_confident"
+		"1": "tbdsmp:item/court/jry_confident"
 	},
 	"elements": [
 		{
