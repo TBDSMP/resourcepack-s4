@@ -1,0 +1,9 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "item/court/facial_expression",
+	"textures": {
+		"0": "item/court/dfd_angry",
+		"particle": "item/court/dfd_angry"
+	}
+}
