@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "item/court/dfa_sweat",
-		"particle": "item/court/dfa_sweat"
+		"0": "tbdsmp:item/court/cul_sweat",
+		"particle": "tbdsmp:item/court/cul_sweat"
 	},
 	"elements": [
 		{
@@ -52,6 +52,8 @@
 			"scale": [0.625, 0.625, 0.625]
 		},
 		"head": {
+			"rotation": [7.5, 0, 0],
+			"translation": [0, 0, -0.5],
 			"scale": [0.80078, 0.80078, 0.80078]
 		},
 		"fixed": {
