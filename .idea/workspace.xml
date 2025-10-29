@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0e23010-8297-4e64-925d-d49e5dbceebc" name="Changes" comment="Made live tag smaller">
+    <list default="true" id="f0e23010-8297-4e64-925d-d49e5dbceebc" name="Changes" comment="chore: Tidy unused assets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/tbdsmp/models/item/plushies/nibs.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tbdsmp/models/item/plushies/nibs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/tbdsmp/models/item/plushies/woqse.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tbdsmp/models/item/plushies/wosqe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/tbdsmp/models/item/plushies/zapp.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tbdsmp/models/item/plushies/zapp.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753913292590</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="chore: Tidy unused assets">
+      <option name="closed" value="true" />
+      <created>1761734151094</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761734151094</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +140,7 @@
     <MESSAGE value="Fulfil the dispersion." />
     <MESSAGE value="Added live streaming state" />
     <MESSAGE value="Made live tag smaller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made live tag smaller" />
+    <MESSAGE value="chore: Tidy unused assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: Tidy unused assets" />
   </component>
 </project>
