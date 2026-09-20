@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 64,
-    "description": "§6TBD SMP Season 4 §r- §dMain Resource Pack"
+    "description": "§6TBD SMP §r- §dMain Resource Pack",
+    "min_format": [88, 0],
+    "max_format": 88
   }
 }
