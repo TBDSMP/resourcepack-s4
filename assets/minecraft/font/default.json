@@ -107,6 +107,20 @@
 		},
 		{
 			"type":"bitmap",
+			"file":"font/rarity_omega.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE006"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/rarity_chromatic.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uE007"]
+		},
+		{
+			"type":"bitmap",
 			"file":"font/type_armour.png",
 			"ascent":9,
 			"height":9,
@@ -160,6 +174,20 @@
 			"ascent":9,
 			"height":9,
 			"chars":["\uF018"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/feature.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uF019"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/improvement.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\uF020"]
 		},
 		{
 			"type": "bitmap",
