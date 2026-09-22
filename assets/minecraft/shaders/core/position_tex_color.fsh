@@ -58,7 +58,7 @@ out vec4 fragColor;
 // ============================================================================
 
 #define RAINBOW_TARGET (vec3(0xFF, 0x00, 0xFF) / 255.0)
-#define RAINBOW_CYCLE_SECONDS 2.0
+#define RAINBOW_CYCLE_SECONDS 4.0
 #define RAINBOW_DIRECTION 1.0
 #define RAINBOW_WAVELENGTH_GUI 120.0
 #define RAINBOW_SATURATION 1.0
@@ -73,9 +73,9 @@ out vec4 fragColor;
 #define PULSE_OMEGA_TARGET (vec3(0x3B, 0xB7, 0xFF) / 255.0)
 #define PULSE_OMEGA_COLOR  PULSE_OMEGA_TARGET
 
-#define PULSE_LIGHTEN 0.30
-#define PULSE_DARKEN 0.35
-#define PULSE_CYCLE_SECONDS 3.0
+#define PULSE_LIGHTEN 0.35
+#define PULSE_DARKEN 0.15
+#define PULSE_CYCLE_SECONDS 2.5
 #define PULSE_DIRECTION 1.0
 #define PULSE_WAVELENGTH_GUI 160.0
 
