@@ -1,29 +1,33 @@
 #version 330
+#extension GL_ARB_separate_shader_objects : require
 
-// Animated text effects: vanilla 26.2 core/text.fsh plus the effect tint.
+// Animated text effects: vanilla 26.3 core/text.fsh plus the effect tint.
 // Configuration lives in include/text_effects.glsl.
 
 #if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
-#moj_import <minecraft:fog.glsl>
+#include <minecraft:fog.glsl>
 #endif
 
-#moj_import <minecraft:dynamictransforms.glsl>
-#moj_import <minecraft:globals.glsl>
-#moj_import <minecraft:text_effects.glsl>
+#include <minecraft:dynamictransforms.glsl>
+#include <minecraft:oit.glsl>
+#include <minecraft:globals.glsl>
+#include <minecraft:text_effects.glsl>
 
 uniform sampler2D Sampler0;
 
 #if !defined(IS_GUI) && !defined(IS_SEE_THROUGH)
-in float sphericalVertexDistance;
-in float cylindricalVertexDistance;
+layout(location = 0) in float sphericalVertexDistance;
+layout(location = 1) in float cylindricalVertexDistance;
 #endif
 
-in vec4 vertexColor;
-in vec2 texCoord0;
-flat in int effectMode;
-in float effectCoord;
+layout(location = 2) in vec4 vertexColor;
+layout(location = 3) in vec2 texCoord0;
+layout(location = 4) flat in int effectMode;
+layout(location = 5) in float effectCoord;
 
-out vec4 fragColor;
+#ifndef OIT_ALPHA_ONLY
+layout(location = 0) out vec4 fragColor;
+#endif
 
 // Position along the wave, measured in wavelengths.
 float wave_coord(float wavelengthGui, float wavelengthWorld) {
@@ -36,12 +40,31 @@ float wave_coord(float wavelengthGui, float wavelengthWorld) {
 #endif
 }
 
+vec4 calculateFinalColor(vec4 color) {
+    #ifdef OIT_ACCUMULATE
+    color = sampleColorForAccumulation(color);
+    #endif
+
+    #if !defined(IS_SEE_THROUGH) && !defined(IS_GUI)
+
+    #ifdef OIT_ACCUMULATE
+    vec4 fogColor = vec4(FogColor.rgb * color.a, FogColor.a);
+    #else
+    vec4 fogColor = FogColor;
+    #endif
+
+    color = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, fogColor);
+    #endif
+
+    return color;
+}
+
 void main() {
-#ifdef IS_GRAYSCALE
+    #ifdef IS_GRAYSCALE
     vec4 texColor = texture(Sampler0, texCoord0).rrrr;
-#else
+    #else
     vec4 texColor = texture(Sampler0, texCoord0);
-#endif
+    #endif
 
     vec4 tint = vertexColor;
     int effect = effectMode / 2;
@@ -53,20 +76,15 @@ void main() {
                              GameTime);
     }
 
-#ifdef IS_SEE_THROUGH
-    vec4 color = texColor * tint;
-#else
     vec4 color = texColor * tint * ColorModulator;
-#endif
+
     if (color.a < 0.1) {
         discard;
     }
 
-#ifdef IS_SEE_THROUGH
-    fragColor = color * ColorModulator;
-#elif defined(IS_GUI)
-    fragColor = color;
-#else
-    fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
-#endif
+    #ifdef OIT_ALPHA_ONLY
+    executeAlphaOnlyPhase(gl_FragCoord.z, color.a);
+    #else
+    fragColor = calculateFinalColor(color);
+    #endif
 }

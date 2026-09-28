@@ -1,6 +1,7 @@
 #version 330
+#extension GL_ARB_separate_shader_objects : require
 
-// Animated tooltip frame: vanilla 26.2 core/position_tex_color.fsh plus a
+// Animated tooltip frame: vanilla 26.3 core/position_tex_color.fsh plus a
 // marker test on the sampled texel.
 //
 // core/text.* keys off the vertex colour, which the game sets per glyph. A
@@ -8,36 +9,36 @@
 // lives in the texture instead: a sprite painted in one of the effect colours
 // at TOOLTIP_MARKER_ALPHA. tools/mark_tooltip_sprites.py writes those sprites.
 //
-// This file cannot #moj_import, so the uniform blocks and the effect settings
+// This file cannot #include, so the uniform blocks and the effect settings
 // below are pasted in. Anything changed in include/text_effects.glsl has to be
 // changed here too.
 
 layout(std140) uniform DynamicTransforms {
     mat4 ModelViewMat;
+    mat4 TextureMat;
     vec4 ColorModulator;
     vec3 ModelOffset;
-    mat4 TextureMat;
 };
 
 // Copy of include/globals.glsl.
 layout(std140) uniform Globals {
     ivec3 CameraBlockPos;
-    vec3 CameraOffset;
-    vec2 ScreenSize;
     float GlintAlpha;
+    vec3 CameraOffset;
     float GameTime;
+    vec2 ScreenSize;
     int MenuBlurRadius;
     int UseRgss;
 };
 
 uniform sampler2D Sampler0;
 
-in vec2 texCoord0;
-in vec4 vertexColor;
-in float effectCoord;
-flat in int guiPass;
+layout(location = 0) in vec2 texCoord0;
+layout(location = 1) in vec4 vertexColor;
+layout(location = 2) in float effectCoord;
+layout(location = 3) flat in int guiPass;
 
-out vec4 fragColor;
+layout(location = 0) out vec4 fragColor;
 
 // ============================================================================
 //  Tooltip marker

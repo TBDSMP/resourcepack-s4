@@ -1,4 +1,5 @@
-#version 330
+#ifndef TEXT_EFFECTS_GLSL
+#define TEXT_EFFECTS_GLSL
 
 // ============================================================================
 //  Animated text effects - configuration
@@ -170,3 +171,5 @@ vec3 pulse_at(vec3 color, float coord, float gameTime) {
     float phase = coord - PULSE_DIRECTION * seconds / PULSE_CYCLE_SECONDS;
     return pulse_color(color, cos(phase * TEXT_EFFECT_TAU));
 }
+
+#endif
