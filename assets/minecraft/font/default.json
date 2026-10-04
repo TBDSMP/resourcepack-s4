@@ -202,13 +202,6 @@
 			"ascent":7,
 			"height":7,
 			"chars":["\uF017"]
-		},
-		{
-			"type":"bitmap",
-			"file":"font/ui/features.png",
-			"ascent":14,
-			"height":256,
-			"chars":["\uA000"]
 		}
     ]
 }
