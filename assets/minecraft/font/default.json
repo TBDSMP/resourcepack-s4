@@ -206,7 +206,7 @@
 		{
 			"type":"bitmap",
 			"file":"font/ui/features.png",
-			"ascent":7,
+			"ascent":16,
 			"height":256,
 			"chars":["\uA000"]
 		}
