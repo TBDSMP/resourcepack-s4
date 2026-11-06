@@ -162,11 +162,25 @@
 			"chars":["\uF014"]
 		},
 		{
+			"type": "bitmap",
+			"file": "font/season4_logo_plants.png",
+			"ascent": 50,
+			"height": 50,
+			"chars":["\uF015"]
+		},
+		{
 			"type":"bitmap",
 			"file":"font/type_memento.png",
 			"ascent":9,
 			"height":9,
 			"chars":["\uF016"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/state_live.png",
+			"ascent":7,
+			"height":7,
+			"chars":["\uF017"]
 		},
 		{
 			"type":"bitmap",
@@ -190,25 +204,11 @@
 			"chars":["\uF020"]
 		},
 		{
-			"type": "bitmap",
-			"file": "font/season4_logo_plants.png",
-			"ascent": 50,
-			"height": 50,
-			"chars":["\uF015"]
-		},
-		{
-			"type":"bitmap",
-			"file":"font/state_live.png",
-			"ascent":7,
-			"height":7,
-			"chars":["\uF017"]
-		},
-		{
 			"type":"bitmap",
 			"file":"font/starting_banner.png",
 			"ascent":8,
 			"height":8,
-			"chars":["\uF018"]
+			"chars":["\uF021"]
 		}
     ]
 }
