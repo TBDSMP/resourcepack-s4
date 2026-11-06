@@ -202,6 +202,13 @@
 			"ascent":7,
 			"height":7,
 			"chars":["\uF017"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/starting_banner.png",
+			"ascent":8,
+			"height":8,
+			"chars":["\uF018"]
 		}
     ]
 }
