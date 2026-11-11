@@ -85,6 +85,36 @@
 // Same for text drawn in the world, as a fraction of the screen width.
 #define PULSE_WAVELENGTH_WORLD 0.5
 
+// ------------------------------------------------------------------- wave ---
+
+// Text in the font tbdsmp:wave bobs up and down, one letter after another.
+// It keeps its colour, so it stacks with the rainbow and pulse effects.
+// Use it in a text component: {"text": "hello", "font": "tbdsmp:wave"}
+// Only the vanilla bitmap glyphs (Latin, accented, Cyrillic, Greek, ...)
+// move. Characters that fall back to Unifont stay still, and so does
+// everything when "Force Unicode Font" is turned on.
+
+// How far letters move up and down from their resting spot, in GUI pixels.
+#define WAVE_AMPLITUDE_GUI 1.0
+
+// Same for text drawn in the world, in blocks. A sign pixel is about 0.011
+// blocks, a name tag pixel 0.025.
+#define WAVE_AMPLITUDE_WORLD 0.012
+
+// Seconds for one letter to go up, down and back. Same rule as the others:
+// use a value that divides 1200 evenly.
+#define WAVE_CYCLE_SECONDS 1.5
+
+// 1.0 moves the wave left to right, -1.0 moves it right to left.
+#define WAVE_DIRECTION 1.0
+
+// Distance between two crests for GUI text, in GUI pixels. A normal letter
+// is about 6 pixels wide.
+#define WAVE_WAVELENGTH_GUI 40.0
+
+// Same for text drawn in the world, as a fraction of the screen width.
+#define WAVE_WAVELENGTH_WORLD 0.25
+
 // ----------------------------------------------------------------- shared ---
 
 // 1 also recolours the drop shadow (vanilla draws it at 25% brightness).
@@ -170,6 +200,45 @@ vec3 pulse_at(vec3 color, float coord, float gameTime) {
     float seconds = gameTime * 1200.0;
     float phase = coord - PULSE_DIRECTION * seconds / PULSE_CYCLE_SECONDS;
     return pulse_color(color, cos(phase * TEXT_EFFECT_TAU));
+}
+
+// Glyphs in tbdsmp:wave carry marker pixels in their corners, colour
+// (255, 255, B) with alpha 254 (was opaque) or 1 (was empty). B tells which
+// corner it is. tools/make_wave_font.py writes them.
+#define WAVE_MARK_BOTH  252
+#define WAVE_MARK_LEFT  253
+#define WAVE_MARK_RIGHT 254
+
+// The marker at one texel, or 0 if there is none.
+int wave_marker(sampler2D atlas, ivec2 texel) {
+    ivec4 c = ivec4(round(texelFetch(atlas, texel, 0) * 255.0));
+    if (c.r != 255 || c.g != 255 || (c.a != 1 && c.a != 254)) return 0;
+    return (c.b >= WAVE_MARK_BOTH && c.b <= WAVE_MARK_RIGHT) ? c.b : 0;
+}
+
+// For a vertex of a wave glyph: how many texels its corner sits right of the
+// glyph's left edge (0 for left corners, the glyph width for right corners).
+// -1 for every other glyph.
+//
+// The glyph atlas UVs are inset by 0.01 texels, so flooring them lands on the
+// texel just inside the corner, whatever corner this vertex is.
+int wave_corner_offset(sampler2D atlas, vec2 uv) {
+    ivec2 texel = ivec2(floor(uv * vec2(textureSize(atlas, 0))));
+    int mark = wave_marker(atlas, texel);
+    if (mark == WAVE_MARK_LEFT) return 0;
+    if (mark == WAVE_MARK_BOTH) return (fract(uv.x * float(textureSize(atlas, 0).x)) > 0.5) ? 1 : 0;
+    if (mark != WAVE_MARK_RIGHT) return -1;
+    // Right corner: walk left along the same row to the left marker.
+    for (int k = 1; k < 32; k++) {
+        if (wave_marker(atlas, texel - ivec2(k, 0)) == WAVE_MARK_LEFT) return k + 1;
+    }
+    return -1;
+}
+
+// Vertical offset in units of the amplitude. coord is in wavelengths.
+float wave_offset(float coord, float gameTime) {
+    float seconds = gameTime * 1200.0;
+    return sin((coord - WAVE_DIRECTION * seconds / WAVE_CYCLE_SECONDS) * TEXT_EFFECT_TAU);
 }
 
 #endif
