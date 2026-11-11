@@ -443,6 +443,13 @@
 		},
 		{
 			"type":"bitmap",
+			"file":"font/emoji/whatcat.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue623"]
+		},
+		{
+			"type":"bitmap",
 			"file":"font/emoji/hashmei.png",
 			"ascent":9,
 			"height":9,
