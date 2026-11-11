@@ -5,161 +5,161 @@
 			"file":"font/dev.png",
 			"ascent":7,
 			"height":7,
-			"chars":["\uD001"]
+			"chars":["\ud001"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/admin.png",
 			"ascent":7,
 			"height":7,
-			"chars":["\uD002"]
+			"chars":["\ud002"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_common.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF001"]
+			"chars":["\uf001"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_uncommon.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF002"]
+			"chars":["\uf002"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_rare.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF003"]
+			"chars":["\uf003"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_epic.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF004"]
+			"chars":["\uf004"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_legendary.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF005"]
+			"chars":["\uf005"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_mythic.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF006"]
+			"chars":["\uf006"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_special.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF007"]
+			"chars":["\uf007"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_unreal.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF008"]
+			"chars":["\uf008"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_transcendent.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uE004"]
+			"chars":["\ue004"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_celestial.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uE005"]
+			"chars":["\ue005"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/sub_rarity_shiny.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uE000"]
+			"chars":["\ue000"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/sub_rarity_shadow.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uE001"]
+			"chars":["\ue001"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/sub_rarity_obfuscated.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uE002"]
+			"chars":["\ue002"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_omega.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uE006"]
+			"chars":["\ue006"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/rarity_chromatic.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uE007"]
+			"chars":["\ue007"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/type_armour.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF009"]
+			"chars":["\uf009"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/type_consumable.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF010"]
+			"chars":["\uf010"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/type_tool.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF011"]
+			"chars":["\uf011"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/type_utility.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF012"]
+			"chars":["\uf012"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/type_weapon.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF013"]
+			"chars":["\uf013"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/type_fish.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF014"]
+			"chars":["\uf014"]
 		},
 		{
 			"type": "bitmap",
@@ -173,7 +173,7 @@
 			"file":"font/type_memento.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF016"]
+			"chars":["\uf016"]
 		},
 		{
 			"type":"bitmap",
@@ -187,28 +187,280 @@
 			"file":"font/type_dye.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF018"]
+			"chars":["\uf018"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/feature.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF019"]
+			"chars":["\uf019"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/improvement.png",
 			"ascent":9,
 			"height":9,
-			"chars":["\uF020"]
+			"chars":["\uf020"]
 		},
 		{
 			"type":"bitmap",
 			"file":"font/starting_banner.png",
 			"ascent":8,
 			"height":8,
-			"chars":["\uF021"]
+			"chars":["\uf021"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/scared.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue600"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/surprised.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue601"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/wide_smile.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue602"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/clown.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue603"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/pensive.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue604"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/disguised_face.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue605"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/mind_blown.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue606"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/kissy_face.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue607"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/screaming_face.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue608"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/vomit.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue609"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/monocle.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue60a"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/sus.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue60b"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/laugh.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue60c"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/tongue_out.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue60d"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/hot_and_bothered.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue60e"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/sweat_smile.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue60f"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/sob.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue610"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/lying_nose.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue611"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/nerd_face.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue612"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/yay.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue613"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/puppy_eyes.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue614"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/chickle.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue616"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/adhd.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue617"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/aga.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue618"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/autism.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue619"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/awesome.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue61A"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/clueless.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue61B"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/glorp.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue61C"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/glorpflower.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue61D"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/kekw.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue61E"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/oh.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue61F"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/sobpud.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue620"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/spoingus.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue621"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/watchyourmeowth.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue622"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/whatcat.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue623"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/hashmei.png",
+			"ascent":9,
+			"height":9,
+			"chars":["\ue615"]
 		}
-    ]
+	]
 }
