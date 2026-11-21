@@ -457,6 +457,34 @@
 		},
 		{
 			"type":"bitmap",
+			"file":"font/emoji/denmark_heart.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue624"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/heart.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue625"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/norway_heart.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue626"]
+		},
+		{
+			"type":"bitmap",
+			"file":"font/emoji/trans_heart.png",
+			"ascent":8,
+			"height":9,
+			"chars":["\ue627"]
+		},
+		{
+			"type":"bitmap",
 			"file":"font/emoji/hashmei.png",
 			"ascent":9,
 			"height":9,
